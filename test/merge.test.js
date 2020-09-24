@@ -122,8 +122,8 @@ describe('merge', function() {
 
     expected[1] = undefined;
 
-    assert.ok('1' in actual);
-    assert.deepStrictEqual(actual, expected);
+    assert.deepStrictEqual(1, actual[0]);
+    assert.deepStrictEqual(actual[1], expected[1]);
   });
 
   it('should merge `arguments` objects', function() {

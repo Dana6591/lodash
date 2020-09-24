@@ -1,4 +1,5 @@
 import assert from 'assert';
+import flattenTree from '../flattenTree'
 
 describe('flattenTree', function() {
   it('should flattenTree', function() {
