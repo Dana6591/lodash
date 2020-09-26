@@ -18,7 +18,7 @@ describe('rightXorBy', function() {
       { name: 'alice', id: 43 },
     ];
 
-    const actual = rightXorBy(list1, list2, 'id');
+    const actual = rightXorBy(list1, list2, obj => obj.id);
 
     const expect = [
       { name: 'alice', id: 25 },

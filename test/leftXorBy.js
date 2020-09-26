@@ -14,7 +14,7 @@ describe('leftXorBy', function() {
       { name: 'alice', id: 22 },
     ];
 
-    const actual = leftXorBy(list1, list2, 'id');
+    const actual = leftXorBy(list1, list2, obj => obj.id);
 
     const expect = [
       { name: 'alice', id: 18 },

@@ -1,9 +1,9 @@
 import intersectionBy from './intersectionBy'
 import xorBy from './xorBy'
 
-function rightXorBy(leftList, rightList, key) {
-  var intersection = intersectionBy(leftList, rightList, key);
-  return xorBy(rightList, intersection, key);
+function rightXorBy(leftList, rightList, fn) {
+  var intersection = intersectionBy(leftList, rightList, fn);
+  return xorBy(rightList, intersection, fn);
 }
 
 export default rightXorBy
